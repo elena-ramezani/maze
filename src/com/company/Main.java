@@ -26,7 +26,7 @@ public class Main {
         List<List<Integer>> mazeMatrix = new ArrayList<List<Integer>>();  // making arraylist for matrix
         ArrayList<Maze> mazeList;
         mazeList = new ArrayList<Maze>();
-        mazeMatrix = readMaze("/Users/srh/Desktop/project4/Maze - Input.csv");// mazeMatrix is the result of reading the maze
+        mazeMatrix = readMaze("../Maze - Input.csv");// mazeMatrix is the result of reading the maze
         mazeMatrix.get(x_end).set(y_end, 2); // initialized the end by two
         sol = check(mazeMatrix,x_start,y_start); // sol is the result if the recursive function
         System.out.println(sol);
